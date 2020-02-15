@@ -44,6 +44,7 @@
               $lc_html .= "<td colspan='2' style='text-align: right;'>".number_format($sumtotaldis)."</td>";
               $lc_html .= "</tr>";
             }
+<<<<<<< HEAD
             if($sumGrantotal != 0){
               $lc_html .= "<tr>";
               $lc_html .= "<td colspan='2'>Total</td>";
@@ -54,6 +55,16 @@
               $lc_html .= "<td colspan='2' style='text-align: right;'>".number_format($sumGrantotal-$sumtotaldis)."</td>";
               $lc_html .= "</tr>";
             }
+=======
+            $lc_html .= "<tr>";
+            $lc_html .= "<td colspan='2'>Total</td>";
+            $lc_html .= "<td colspan='2' style='text-align: right;'>".number_format($sumGrantotal)."</td>";
+            $lc_html .= "</tr>";
+            $lc_html .= "<tr>";
+            $lc_html .= "<td colspan='2'>Grand Total</td>";
+            $lc_html .= "<td colspan='2' style='text-align: right;'>".number_format($sumGrantotal-$sumtotaldis)."</td>";
+            $lc_html .= "</tr>";
+>>>>>>> 2291cd3c2ef3f4ef5c7874364da4cf4b525da766
             $lc_html .= "</table>";
         $obrespone->assign("tb_shop","innerHTML",$lc_html);
       return $obrespone;
@@ -150,6 +161,7 @@
                               $lc_html .= "<td colspan='2' style='text-align: right;'>".number_format($sumtotaldis)."</td>";
                               $lc_html .= "</tr>";
                             }
+<<<<<<< HEAD
                             if($sumGrantotal != 0){
                                 $lc_html .= "<tr>";
                                 $lc_html .= "<td colspan='2'>Total</td>";
@@ -160,6 +172,16 @@
                                 $lc_html .= "<td colspan='2' style='text-align: right;'>".number_format($sumGrantotal-$sumtotaldis)."</td>";
                                 $lc_html .= "</tr>";
                             }
+=======
+                            $lc_html .= "<tr>";
+                            $lc_html .= "<td colspan='2'>Total</td>";
+                            $lc_html .= "<td colspan='2' style='text-align: right;'>".number_format($sumGrantotal)."</td>";
+                            $lc_html .= "</tr>";
+                            $lc_html .= "<tr>";
+                            $lc_html .= "<td colspan='2'>Grand Total</td>";
+                            $lc_html .= "<td colspan='2' style='text-align: right;'>".number_format($sumGrantotal-$sumtotaldis)."</td>";
+                            $lc_html .= "</tr>";
+>>>>>>> 2291cd3c2ef3f4ef5c7874364da4cf4b525da766
                           $lc_html .= "</table>";
                           echo $lc_html;
                         }else{
