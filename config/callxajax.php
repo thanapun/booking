@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require '../xajax/xajax_core/xajax.inc.php';
     require '../controller/fn_function.php';
     require '../model/ml_booking.php';
@@ -12,5 +13,6 @@
     // Xajax
     $xajax->configure('javascript URI', '../xajax/');
     $xajax->register(XAJAX_FUNCTION,"storebook");
+    $xajax->register(XAJAX_FUNCTION,"removeItembook");
     $xajax->processRequest();
 ?>
