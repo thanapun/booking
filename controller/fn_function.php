@@ -1,5 +1,5 @@
 <?php
-    Class cl_booking{
+    Class fn_function{
         
     }
 ?>
